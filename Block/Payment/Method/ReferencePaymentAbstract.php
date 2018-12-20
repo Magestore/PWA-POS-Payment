@@ -56,7 +56,7 @@ class ReferencePaymentAbstract extends \Magento\Payment\Block\Info
         if (null !== $this->_paymentSpecificInformation) {
             return $this->_paymentSpecificInformation;
         }
-        $data = array();
+        $data = [];
         $orderId = $this->getInfo()->getData('parent_id');
         $code =  $this->getInfo()->getData('method');
         $amount = $this->getPaymentAmount($orderId, $code);
@@ -79,10 +79,9 @@ class ReferencePaymentAbstract extends \Magento\Payment\Block\Info
     {
         $payments = $this->orderPaymentCollection
             ->addFieldToFilter('order_id', $orderId)
-            ->addFieldToFilter('method', $code)
-        ;
+            ->addFieldToFilter('method', $code);
         $amount = 0;
-        if($payments->getSize() > 0){
+        if ($payments->getSize() > 0) {
             $payment = $payments->getFirstItem();
             $amount = $payment->getRealAmount();
         }

@@ -72,9 +72,9 @@ class AbstractMethod extends \Magento\Payment\Model\Method\AbstractMethod
     {
         $routeName = $this->request->getRouteName();
         $settingEnabled = $this->isEnabledSetting();
-        if ($routeName == "webpos"&& $settingEnabled == true){
+        if ($routeName == "webpos" && $settingEnabled == true) {
             return true;
-        }else{
+        } else {
             return false;
         }
     }
@@ -83,7 +83,8 @@ class AbstractMethod extends \Magento\Payment\Model\Method\AbstractMethod
      * @return bool
      * @throws \Magento\Framework\Exception\LocalizedException
      */
-    public function isEnabledSetting(){
+    public function isEnabledSetting()
+    {
         return ($this->_scopeConfig->getValue($this->enabledPath, \Magento\Store\Model\ScopeInterface::SCOPE_STORE) && $this->isAllowOnWebPOS($this->getCode()));
     }
 
@@ -105,5 +106,4 @@ class AbstractMethod extends \Magento\Payment\Model\Method\AbstractMethod
         }
         return true;
     }
-
 }

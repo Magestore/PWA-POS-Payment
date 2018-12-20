@@ -8,12 +8,12 @@ namespace Magestore\Payment\Model\Payment\Method;
 
 /**
  * class \Magestore\Payment\Model\Payment\Method\MultiPayment
- * 
+ *
  * Web POS partial payment method model
  * Methods:
  *  assignData
  *  isAvailable
- * 
+ *
  * @category    Magestore
  * @package     Magestore_Webpos
  * @module      Webpos

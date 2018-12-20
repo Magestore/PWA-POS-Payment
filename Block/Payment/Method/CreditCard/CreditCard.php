@@ -20,5 +20,4 @@ class CreditCard extends \Magestore\Payment\Block\Payment\Method\ReferencePaymen
     {
         return $this->getCreditCardMethodTitle();
     }
-
 }

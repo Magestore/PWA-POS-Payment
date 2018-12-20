@@ -41,5 +41,4 @@ class Cash extends \Magento\Payment\Block\Info
         }
         return $title;
     }
-
 }

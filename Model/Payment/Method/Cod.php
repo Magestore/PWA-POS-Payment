@@ -8,12 +8,12 @@ namespace Magestore\Payment\Model\Payment\Method;
 
 /**
  * class \Magestore\Payment\Model\Payment\Method\Cod
- * 
+ *
  * Web POS Cash on delivery (Pay later) payment method model
  * Methods:
  *  assignData
  *  isAvailable
- * 
+ *
  * @category    Magestore
  * @package     Magestore_Webpos
  * @module      Webpos

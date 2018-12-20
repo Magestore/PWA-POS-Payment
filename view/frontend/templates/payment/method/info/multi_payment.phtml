@@ -23,17 +23,17 @@
 $specificInfo = $block->getSpecificInformation();
 ?>
 <dl class="payment-method">
-    <?php if ($specificInfo):?>
+    <?php if ($specificInfo) :?>
         <dd class="content">
             <table class="data table">
-                <?php foreach ($specificInfo as $item):?>
+                <?php foreach ($specificInfo as $item) :?>
                     <tr>
                         <th scope="row"><?= $block->escapeHtml($item['label']) ?></th>
                         <td>
                             <?= /* @noEscape */ $item['value'] ?>
                         </td>
                     </tr>
-                    <?php if ($item['reference_number']):?>
+                    <?php if ($item['reference_number']) :?>
                         <tr>
                             <th style="padding-left: 10px; font-size: 12px"><i><?= __('Reference No')?></i></th>
                             <td><?= $item['reference_number'] ?></td>

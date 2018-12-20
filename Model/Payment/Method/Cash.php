@@ -9,11 +9,11 @@ namespace Magestore\Payment\Model\Payment\Method;
 
 /**
  * class \Magestore\Payment\Model\Payment\Method\Cash
- * 
+ *
  * Web POS Cash payment method model
  * Methods:
  *  isAvailable
- * 
+ *
  * @category    Magestore
  * @package     Magestore_Payment
  * @module      Payment

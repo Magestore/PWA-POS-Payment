@@ -6,16 +6,15 @@
  */
 namespace Magestore\Payment\Block\Payment\Method\CreditCard;
 
-
 /**
  * class \Magestore\Payment\Block\Payment\Method\Cc\Info\Cp1
- * 
+ *
  * CP1 for POS info block
  * Methods:
  *  _construct
  *  _prepareSpecificInformation
  *  getMethodTitle
- * 
+ *
  * @category    Magestore
  * @package     Magestore\Payment\Block\Payment\Method\Cc\Info
  * @module      Webpos
@@ -30,5 +29,4 @@ class CustomPayment1 extends \Magestore\Payment\Block\Payment\Method\ReferencePa
     {
         return $this->getCustomPayment1MethodTitle();
     }
-
 }

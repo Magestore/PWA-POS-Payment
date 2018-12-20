@@ -40,6 +40,4 @@ class Cod extends \Magento\Payment\Block\Info
         }
         return $title;
     }
-
-
 }
